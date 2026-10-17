@@ -1,0 +1,16 @@
+[project]
+name = "mcp-inventory-agent"
+version = "1.0.0"
+description = "Industrial Computing HW1 (Option A): custom MCP server (SQLite inventory, tiered discount engine, audit log) + ReAct agent"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=3.4.4",
+    "openai>=1.40.0",
+    "python-dotenv>=1.0.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
